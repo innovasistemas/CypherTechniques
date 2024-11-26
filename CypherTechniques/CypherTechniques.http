@@ -1,0 +1,6 @@
+@CypherTechniques_HostAddress = http://localhost:5259
+
+GET {{CypherTechniques_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
