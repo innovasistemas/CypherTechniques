@@ -55,11 +55,23 @@ app.MapGet("/", () => Results.Json(
 );
 
 
+app.MapGet("/invertir-texto", (string plainText) => 
+{
+    InvertirTexto it = new(plainText);
+    return it.InvertirCadena();
+});
+
+app.MapGet("/revertir-texto", (string codedText) => 
+{
+    InvertirTexto it = new(codedText);
+    return it.RevertirCadena();
+});
+
+
 app.MapGet("/base64encode", (string plainText) => 
 {
     return Base64.Base64Encode(plainText);
 });
-
 
 app.MapGet("/base64decode", (string textBase64) => 
 {
@@ -79,7 +91,6 @@ app.MapGet("/number-base-encode", (string text, int baseN = 0) =>
         return "Base númerica (clave) no válida o no indicada";
     }
 });
-
 
 app.MapGet("/number-base-decode", (string text, int baseN) => 
 {
