@@ -67,23 +67,31 @@ app.MapGet("/base64decode", (string textBase64) =>
 });
 
 
-app.MapGet("/number-base-encode", (string text, int baseN) => 
+app.MapGet("/number-base-encode", (string text, int baseN = 0) => 
 {
-    NumberBase nb = new()
-    {
-        StringInput = text
-    };
-    return nb.EncodeBaseString(baseN);
+    if (baseN == 2 || baseN == 8 || baseN == 10 || baseN == 16) {
+        NumberBase nb = new()
+        {
+            StringInput = text
+        };
+        return nb.EncodeBaseString(baseN);
+    } else {
+        return "Base númerica (clave) no válida o no indicada";
+    }
 });
 
 
 app.MapGet("/number-base-decode", (string text, int baseN) => 
 {
-    NumberBase nb = new()
-    {
-        StringInput = text
-    };
-    return nb.DecodeBaseString(baseN);    
+    if (baseN == 2 || baseN == 8 || baseN == 10 || baseN == 16) {
+        NumberBase nb = new()
+        {
+            StringInput = text
+        };
+        return nb.DecodeBaseString(baseN);
+    } else {
+        return "Base númerica (clave) no válida o no indicada";
+    }
 });
 
 
