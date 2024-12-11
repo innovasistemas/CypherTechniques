@@ -1,6 +1,6 @@
-using Microsoft.AspNetCore.Mvc;
 using CypherTechniques;
 using CypherTechniques.EncodeDecode;
+using CypherTechniques.EncryptionDecryption;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -103,6 +103,20 @@ app.MapGet("/number-base-decode", (string text, int baseN) =>
     } else {
         return "Base númerica (clave) no válida o no indicada";
     }
+});
+
+
+app.MapGet("/aes-encryption", (string textPlaine, string key) => 
+{
+    AES ojbAes = new(textPlaine, key);
+    return ojbAes.EncryptAES();
+});
+
+
+app.MapGet("/aes-decryption", (byte[] cypherText, string key) => 
+{
+    AES ojbAes = new(cypherText, key);
+    return ojbAes.DecryptAES();
 });
 
 
