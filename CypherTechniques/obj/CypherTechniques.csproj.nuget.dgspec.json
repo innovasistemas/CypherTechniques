@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\posit\\Documents\\csharp\\CypherTechniques\\CypherTechniques\\CypherTechniques.csproj": {}
+    "C:\\Users\\posit\\Documents\\academico\\lenguajes\\csharp\\CypherTechniques\\CypherTechniques\\CypherTechniques.csproj": {}
   },
   "projects": {
-    "C:\\Users\\posit\\Documents\\csharp\\CypherTechniques\\CypherTechniques\\CypherTechniques.csproj": {
+    "C:\\Users\\posit\\Documents\\academico\\lenguajes\\csharp\\CypherTechniques\\CypherTechniques\\CypherTechniques.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\posit\\Documents\\csharp\\CypherTechniques\\CypherTechniques\\CypherTechniques.csproj",
+        "projectUniqueName": "C:\\Users\\posit\\Documents\\academico\\lenguajes\\csharp\\CypherTechniques\\CypherTechniques\\CypherTechniques.csproj",
         "projectName": "CypherTechniques",
-        "projectPath": "C:\\Users\\posit\\Documents\\csharp\\CypherTechniques\\CypherTechniques\\CypherTechniques.csproj",
+        "projectPath": "C:\\Users\\posit\\Documents\\academico\\lenguajes\\csharp\\CypherTechniques\\CypherTechniques\\CypherTechniques.csproj",
         "packagesPath": "C:\\Users\\posit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\posit\\Documents\\csharp\\CypherTechniques\\CypherTechniques\\obj\\",
+        "outputPath": "C:\\Users\\posit\\Documents\\academico\\lenguajes\\csharp\\CypherTechniques\\CypherTechniques\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,7 +43,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
         "SdkAnalysisLevel": "9.0.100"
       },
@@ -79,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.122/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

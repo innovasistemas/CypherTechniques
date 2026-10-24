@@ -16,7 +16,7 @@ namespace CypherTechniques.EncodeDecode
             StringInput = "";
             StringBaseOutput = "";
             hexChars = ["A", "B", "C", "D", "E", "F"];
-            digHex = [10, 11, 12, 13, 14, 15, 16];
+            digHex = [10, 11, 12, 13, 14, 15];
         }
 
 
